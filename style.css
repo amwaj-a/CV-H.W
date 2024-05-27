@@ -17,17 +17,28 @@ section{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 0.9rem;
+    /* ----------------------------------------- */
+    font-size: 1.5rem;
 }
+.title{
+
+    font-size: 2rem;
+    text-align: center
+    ;
+}
+
 img{
-    /* align-content: center; */
     border-radius:50% ;
-    height: 7%;
+        /* ----------------------------------------- */
+
+    height: 20%;
     width: 80%;
     margin-bottom: 10px;
 }
 .contact p ,.EDUCATION {
-    font-size: 0.7rem;
+        /* ----------------------------------------- */
+
+    font-size: 1rem;
     text-align: start;
 }
 .EDUCATION strong {
@@ -37,7 +48,9 @@ img{
 }
 
 .sectionLeft ul{
-    font-size: 0.7rem;
+        /* ----------------------------------------- */
+
+    font-size: 1rem;
     padding-left: 10px;
 
 }
@@ -53,6 +66,8 @@ color: aliceblue;
 color: var(--color);
 }
 .sectionRight{
+    margin-left: 10px;
+    padding-left: 10px;
     color: #5b5149;
 }
 .bgBlue{
@@ -69,7 +84,9 @@ font-weight: 500;
     border-bottom: 5px solid var(--color);
 }
 .sectionRight ul{
-    font-size: 0.8rem;
+        /* ----------------------------------------- */
+
+    font-size: 1.1rem;
 margin-top: 5px;
 margin-bottom: 0;
     padding-left: 20px;
@@ -90,10 +107,14 @@ float:right;
    .REFERENCE{
     display: flex;
     justify-content: space-between;
-    font-size: 0.6rem;
+        /* ----------------------------------------- */
+line-height: 2rem;
+    font-size: 1.1rem;
    }
     
-        
+      .REFERENCE span{
+        display: block;
+      }  
     .work:before {
         content:"";
         position: absolute;
@@ -107,9 +128,141 @@ padding-bottom: 10px;
         list-style-type: ' - ';
     }
     .work strong{
-        font-size: 1rem;
+            /* ----------------------------------------- */
+
+        font-size: 1.3rem;
     }
+
     .profile p,.work,.EXPERIENCE{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 0.7rem;
+            /* ----------------------------------------- */
+
+        font-size: 1.2rem;
+    }
+ 
+
+.title:hover .firstName strong,.title:hover #lastName span,.title:hover .subTitleHidden{ 
+           display: none;
+    }
+.title:hover .firstName::after {
+    content: 'Amwaj';
+  
+}
+.title:hover #lastName::after{
+    content: 'Alharbi';
+}
+
+.title:hover .subTitle::after{
+    content: 'Developer';
+}
+
+
+
+ 
+
+
+.skill:hover ul li span{
+    display: none;
+}
+
+.skill:hover ul li:nth-child(1):after{
+    content: 'Full knwledge of ( Dart&Flutter , HTML , JavaScript and Reactjs)';
+        
+ }
+
+ .skill:hover ul li:nth-child(4):after{
+    content: 'Teamwork';
+        
+ }.skill:hover ul li:nth-child(3):after{
+    content: 'Time Management';
+        
+ }.skill:hover ul li:nth-child(2):after{
+    content: 'Analyze Data using Microsoft Excel';
+        
+ }
+ .skill:hover ul li:nth-child(5):after{
+    content: 'Research';
+        
+ }
+ 
+
+ .profile:hover p span{
+    display: none
+ }
+ .profile:hover p::after{
+    content: "I'm Programmer who is interested in working in an environment that have a good reputation and high status like your entity and is ready to join your team to participate in working on programming and web designing .";
+ }
+
+.LANGUAGES:hover{
+    .lang{
+        visibility: hidden;
+    }
+}
+.workSection:hover ul li strong span,.workSection:hover ul li span span,
+.workSection:hover ul li:nth-child(2),.workSection:hover li:nth-child(3),.workSection:hover ul li ul li span,.workSection:hover ul li p span{
+    display: none;
+}
+
+.workSection:hover ul li strong::after{
+    content:'Tuwaiq Academy ';
+}
+.workSection:hover ul li span::after{
+    content:'2024 -PRESENT ';
+}
+.workSection:hover ul li ul li::after{
+    content: "In the camp, we were trained to create a website in the shortest time possible and with the highest efficiency. We also learned JavaScript, React JavaScript, HTML, and CSS.";
+}
+.workSection:hover ul li p::after{
+    content: 'Training';
+}
+
+
+    @media only screen and (max-width:712px) {
+        .profile p,.work,.EXPERIENCE{
+            font-size: 0.7rem;
+        }
+        section{
+      
+            font-size: 0.9rem;
+        }
+        img{
+            height: 7%;
+        }
+        .contact p ,.EDUCATION {
+            font-size: 0.7rem;
+        }
+   
+        .sectionLeft ul{
+            font-size: 0.7rem;
+        
+        }
+
+        
+
+        .sectionRight h1 span{
+         font-weight: 500;
+        }
+    
+        .sectionRight ul{
+            font-size: 0.8rem;
+     
+        }
+        
+
+            
+        
+           .REFERENCE{
+       font-size: 0.6rem;
+           }
+   
+
+
+            .work strong{
+                font-size: 1rem;
+            }
+            .title{
+
+                font-size: 1rem;
+           
+            }
     }
